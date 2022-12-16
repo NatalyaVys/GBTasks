@@ -1,7 +1,7 @@
 ﻿using static System.Console;
 
 Write("Введите число ");
-int day = int.Parse(ReadLine());
+int day = int.Parse(ReadLine()!);
 
 if (day <= 7 && day >= 1)
 {
