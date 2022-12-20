@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// задача про стрелков, стреляли каждый по своей мешени, один раз попали в общию, сколько всего мененей сбили.
+
+using static System.Console;
+
+WriteLine("Первый стрелок сбил такое количество банок: ");
+int a = int.Parse(ReadLine()!);
+WriteLine("Второй стрелок сбил такое количество банок: ");
+int b = int.Parse(ReadLine()!);
+
+WriteLine("Одну банку стрелки попали одновременно"); 
+WriteLine("Общее количество сбитых банок:"); 
+WriteLine(a + b - 1);
