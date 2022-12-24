@@ -5,8 +5,8 @@ using static System.Console;
 WriteLine("Введите количество изготовленных деталей: ");
 int number = Convert.ToInt32(ReadLine());
 
-int x = 0;
-int y = 0;
+//int x = 0;
+//int y = 0;
 
 // x = 2(y +y)
 
