@@ -5,7 +5,7 @@ using static System.Console;
 
 int num = askNumber("Ввведите число для преревода в двоичную систему: ");
 
-WriteLine(decimalToBinary(num));
+WriteLine($"Десятичное число {num} в двоичном представлении будет {decimalToBinary(num)}");
 
 string decimalToBinary(int inNum)
 {
