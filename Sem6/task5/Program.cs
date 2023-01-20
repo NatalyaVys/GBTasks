@@ -3,17 +3,19 @@
 using static System.Console;
 Clear();
 
-WriteLine($"ряд фибоначи = [{string.Join(",", fibonachi(20))}]");
-//{string.Join(",", array)
+Write("введите число: ");
+int number = int.Parse(ReadLine()!);
+Fibonachi(number);
 
-int[] fibonachi(int N)
+void Fibonachi(int number)
 {
-    int[] result = new int[N];
-    result[0] = 0;
-    result[1] = 1;
-    for(int i = 2; i < N; i ++)
+    int temp, num1= 0, num2 = 1;
+    Write($"{num1} {num2} ");
+    for (int i = 2; i < number; i++)
     {
-        result[i] = result[i-1] + result[i-2];
+        temp = num1 + num2;
+        num1 = num2;
+        num2 = temp;
+        Write($"{num2}");
     }
-return result;
 }
