@@ -9,6 +9,7 @@ WriteLine($"Десятичное число {num} в двоичном предс
 
 string decimalToBinary(int inNum)
 {
+ if (inNum== 0) return "0";   
 string result = string.Empty;
 
 int rem;        // остаток- rem
