@@ -35,7 +35,7 @@ void PrintArray(int[] numbers)
     Write("[ ");
     for(int i = 0; i < numbers.Length; i++)
     {
-        Console.Write(numbers[i] + " ");
+        Write(numbers[i] + " ");
     }
     Write("]");
     WriteLine();
